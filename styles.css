@@ -1,0 +1,108 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.quote-section {
+  text-align: center;
+  padding: 2rem;
+}
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #f4a261;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e76f51;
+}
+.quote-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#quote {
+  margin: 0;
+  font-size: 1.2rem;
+}
+#author {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+  color: #666;
+}
+.books-section {
+  background-color: #a3bffa;
+  padding: 2rem;
+  text-align: center;
+}
+.books-section h2 {
+  margin-top: 0;
+}
+.books-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.book {
+  text-align: center;
+}
+.book img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+.book a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.book a:hover {
+  color: #e76f51;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-top: auto;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .quote-box {
+    max-width: 100%;
+  }
+  .books-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
